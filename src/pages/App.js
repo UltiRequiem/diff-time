@@ -18,7 +18,8 @@ const App = () => {
           </p>
         ) : (
           <p>
-            {dateDiffInDays(date).toString().replace('-', '')} days have passed since {date.toUTCString()}.
+            {dateDiffInDays(date).toString().replace('-', '')} days have passed
+            since {date.toUTCString()}.
           </p>
         )
       ) : null}

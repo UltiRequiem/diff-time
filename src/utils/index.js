@@ -1,3 +1,3 @@
-import dateDiffInDays from "./getDifferenceBetweenDates";
+import dateDiffInDays from './getDifferenceBetweenDates'
 
-export {dateDiffInDays}
+export { dateDiffInDays }

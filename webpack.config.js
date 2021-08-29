@@ -2,6 +2,8 @@ const path = require('path')
 
 const Dotenv = require('dotenv-webpack')
 const HtmlPlugin = require('html-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 /** @param {string} dir */
 const fm = (dir) => path.join(__dirname, dir)
@@ -9,15 +11,21 @@ const fm = (dir) => path.join(__dirname, dir)
 module.exports = {
   entry: './src/index.js',
 
+  output: {
+    path: fm('dist'),
+    filename: '[name].[contenthash].js'
+  },
+
   mode: 'production',
 
   resolve: {
+    extensions: ['.js'],
     alias: {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
       '@utils': fm('src/utils'),
-      '@config': fm('src/config'),
-    },
+      '@config': fm('src/config')
+    }
   },
 
   module: {
@@ -28,11 +36,15 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          },
-        },
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
-    ],
+      {
+        test: /\.html$/,
+        use: [{ loader: 'html-loader' }]
+      }
+    ]
   },
 
   plugins: [
@@ -42,11 +54,16 @@ module.exports = {
       allowEmptyValues: true,
       systemvars: true,
       silent: true,
-      defaults: false,
+      defaults: false
     }),
+    new CleanWebpackPlugin(),
     new HtmlPlugin({
       template: './public/index.html',
-      filename: './index.html',
-    }),
+      filename: './index.html'
+    })
   ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()]
+  }
 }

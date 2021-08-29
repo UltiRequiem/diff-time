@@ -14,19 +14,19 @@ module.exports = {
 
   devServer: {
     static: {
-      directory: fm('dist'),
+      directory: fm('dist')
     },
     compress: false,
-    port: 3000,
+    port: 3000
   },
 
   resolve: {
     alias: {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
-      '@utils': fm('src/utils'),
-      '@config': fm('src/config'),
-    },
+      '@utils': fm('src/containers'),
+      '@config': fm('src/config')
+    }
   },
 
   module: {
@@ -37,11 +37,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          },
-        },
-      },
-    ],
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
+    ]
   },
 
   plugins: [
@@ -51,11 +51,11 @@ module.exports = {
       allowEmptyValues: true,
       systemvars: true,
       silent: true,
-      defaults: false,
+      defaults: false
     }),
     new HtmlPlugin({
       template: './public/index.html',
-      filename: './index.html',
-    }),
-  ],
+      filename: './index.html'
+    })
+  ]
 }
