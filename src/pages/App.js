@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Calendar } from '../components'
+import { Calendar, Footer } from '../components'
 
 const App = () => {
   const [date, setDate] = useState(null)
@@ -14,6 +14,8 @@ const App = () => {
           {date.getDay()} days left for {date.getDay()}.
         </p>
       ) : null}
+
+      <Footer />
     </>
   )
 }
