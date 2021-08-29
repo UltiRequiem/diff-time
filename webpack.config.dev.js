@@ -24,6 +24,7 @@ module.exports = {
     alias: {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
+      '@utils': fm('src/utils'),
       '@config': fm('src/config'),
     },
   },

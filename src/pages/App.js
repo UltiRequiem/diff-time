@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
-import { Calendar, Footer } from '../components'
+import {Calendar, Footer} from '../components'
+
+import { dateDiffInDays } from '../utils'
 
 const App = () => {
   const [date, setDate] = useState(null)
@@ -11,7 +13,7 @@ const App = () => {
 
       {date ? (
         <p>
-          {date.getDay()} days left for {date.getDay()}.
+          {dateDiffInDays(date)} days left for {date.toUTCString()}.
         </p>
       ) : null}
 

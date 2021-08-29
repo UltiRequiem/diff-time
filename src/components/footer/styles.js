@@ -5,6 +5,8 @@ const StyledFooter = styled.footer`
   background-color: red;
   text-align: center;
   color: white;
+   height: calc(100vh - 100px);
+
 `
 
 export default StyledFooter
