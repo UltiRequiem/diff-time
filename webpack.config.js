@@ -27,7 +27,8 @@ module.exports = {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
       '@utils': fm('src/utils'),
-      '@config': fm('src/config')
+      '@config': fm('src/config'),
+      '@pages': fm('src/pages')
     }
   },
 

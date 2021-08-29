@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import StyledInput from './styles'
 
-const Calendar = (props) => {
-  return <StyledInput type="date" {...props} />
-}
+const Calendar = (props) => <StyledInput type="date" {...props} />
 
 export default Calendar
