@@ -1,1 +1,1 @@
-# How much time left?
+# How many days left?
