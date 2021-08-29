@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import {Calendar, Footer} from '../components'
+import { Calendar, Footer } from '../components'
 
 import { dateDiffInDays } from '../utils'
 
@@ -12,9 +12,15 @@ const App = () => {
       <Calendar onChange={(event) => setDate(new Date(event.target.value))} />
 
       {date ? (
-        <p>
-          {dateDiffInDays(date)} days left for {date.toUTCString()}.
-        </p>
+        dateDiffInDays(date) >= 0 ? (
+          <p>
+            {dateDiffInDays(date)} days left for {date.toUTCString()}.
+          </p>
+        ) : (
+          <p>
+            {dateDiffInDays(date).toString().replace('-', '')} days have passed since {date.toUTCString()}.
+          </p>
+        )
       ) : null}
 
       <Footer />
