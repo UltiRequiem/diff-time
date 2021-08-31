@@ -1,7 +1,16 @@
 import React from 'react'
 
-import StyledFooter from './styles'
+import PropTypes from 'prop-types'
+import { StyledFooter, StyledP } from './styles'
 
-const Footer = () => <StyledFooter> UltiRequiem © 2021</StyledFooter>
+const Footer = ({ message }) => (
+  <StyledFooter>
+    <StyledP>{message}</StyledP>
+  </StyledFooter>
+)
+
+Footer.propTypes = {
+  message: PropTypes.string
+}
 
 export default Footer

@@ -25,7 +25,7 @@ const App = () => {
         )
       ) : null}
 
-      <Footer />
+      <Footer message="UltiRequiem © 2021"/>
     </>
   )
 }
