@@ -1,7 +1,5 @@
 const path = require('path')
 
-const webpack = require('webpack')
-
 const Dotenv = require('dotenv-webpack')
 const HtmlPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
@@ -27,7 +25,6 @@ module.exports = {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
       '@utils': fm('src/utils'),
-      '@config': fm('src/config'),
       '@pages': fm('src/pages')
     }
   },

@@ -1,3 +1,4 @@
-import App from './App'
+import Main from './Main'
+import NotFound from './NotFound'
 
-export { App }
+export { Main, NotFound }

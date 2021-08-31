@@ -17,6 +17,7 @@ module.exports = {
       directory: fm('dist')
     },
     compress: false,
+    historyApiFallback: true,
     port: 3000
   },
 
@@ -25,7 +26,6 @@ module.exports = {
       '@components': fm('src/components'),
       '@containers': fm('src/containers'),
       '@utils': fm('src/utils'),
-      '@config': fm('src/config'),
       '@pages': fm('src/pages')
     }
   },

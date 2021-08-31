@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <Calendar onChange={(event) => setDate(new Date(event.target.value))} />
 
       {date ? (

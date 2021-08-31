@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 function dateDiffInDays(dateOne, dateTwo = new Date()) {
   dateOne = Date.UTC(
     dateOne.getFullYear(),

@@ -5,7 +5,6 @@
       "@components": ["components/"],
       "@containers": ["containers/"],
       "@utils": ["utils/"],
-      "@config": ["config/"],
       "@pages": ["pages/"]
     }
   },
