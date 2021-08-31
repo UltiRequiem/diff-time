@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useState } from 'react'
 
-import { Calendar, Footer } from '../components'
+import { Calendar, Footer, Header } from '../components'
 
 import { dateDiffInDays } from '../utils'
 
@@ -10,6 +10,7 @@ const App = () => {
 
   return (
     <>
+      <Header/>
       <Calendar onChange={(event) => setDate(new Date(event.target.value))} />
 
       {date ? (
@@ -25,7 +26,7 @@ const App = () => {
         )
       ) : null}
 
-      <Footer message="UltiRequiem © 2021"/>
+      <Footer message="UltiRequiem © 2021" />
     </>
   )
 }
