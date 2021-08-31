@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     es6: true
   },
-  ignorePatterns: ['node_modules'],
+  ignorePatterns: ['node_modules', 'build', 'dist'],
   extends: [
     'airbnb-base',
     'prettier',
@@ -27,6 +27,6 @@ module.exports = {
     quotes: ['warn', 'single', 'avoid-escape'],
     'no-plusplus': 'off',
     'max-classes-per-file': 'off',
-    'no-console': 'off',
+    'no-console': 'off'
   }
 }

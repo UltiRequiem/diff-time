@@ -8,12 +8,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "format": "npx prettier --write '**/**/*.js'",
-    "start": "npx webpack serve --config webpack.config.dev.js",
-    "dev": "npx webpack --config webpack.config.dev.js",
-    "build": "npx webpack",
-    "lint": "npx eslint . --ext .js",
-    "fix": "npx eslint . --ext .js --fix"
+    "start:dev": "npx webpack serve --config webpack.config.dev.js",
+    "start:production": "npx webpack serve",
+    "build:dev": "npx webpack --config webpack.config.dev.js",
+    "build:production": "npx webpack",
+    "format": "npx prettier --write .",
+    "lint": "npx eslint  .",
+    "fix": "npx eslint --fix ."
   },
   "dependencies": {
     "prop-types": "^15.7.2",
