@@ -1,0 +1,9 @@
+[build]
+  command = "yarn ruh build:production"
+  publish = "/dist"
+  base = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 404
