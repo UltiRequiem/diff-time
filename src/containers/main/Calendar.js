@@ -11,12 +11,19 @@ const Calendar = ({ dateQuery }) => {
   const [date, setDate] = useState(null)
 
   // eslint-disable-next-line no-param-reassign
-  if (dateQuery !== 'undefined') dateQuery = new Date(dateQuery)
+  if (dateQuery !== null) dateQuery = new Date(dateQuery)
 
   return (
     <>
       <StyledCalendar
         onChange={(event) => setDate(new Date(event.target.value))}
+        value={
+          dateQuery instanceof Date
+            ? `${dateQuery.getFullYear()}-${
+                dateQuery.getMonth() + 1
+              }-${dateQuery.getDate()}`
+            : ''
+        }
       />
 
       {dateQuery ? (
@@ -25,9 +32,9 @@ const Calendar = ({ dateQuery }) => {
             {dateDiffInDays(dateQuery)} days left for {dateQuery.toUTCString()}.
           </p>
         ) : (
-            <p>
-              {dateDiffInDays(dateQuery).toString().replace('-', '')} days have passed
-            since {dateQuery.toUTCString()}.
+          <p>
+            {dateDiffInDays(dateQuery).toString().replace('-', '')} days have
+            passed since {dateQuery.toUTCString()}.
           </p>
         )
       ) : null}

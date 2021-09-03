@@ -9,9 +9,7 @@ const App = () => {
   const location = useLocation()
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(location.search)
-    const singleValue = queryParams.get('date')
-    setParams(singleValue)
+    setParams(new URLSearchParams(location.search).get('date'))
   })
 
   return (
