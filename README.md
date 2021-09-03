@@ -5,6 +5,11 @@
 [![GitMoji](https://img.shields.io/badge/Gitmoji-%F0%9F%8E%A8%20-FFDD67.svg)](https://gitmoji.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Lines Of Code](https://img.shields.io/tokei/lines/github.com/UltiRequiem/diff-time?color=blue&label=Total%20Lines)
-[![Language Grade](https://img.shields.io/lgtm/grade/javascript/g/UltiRequiem/diff-time.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/UltiRequiem/diff-time/context:javascript)
 
 ![Screenshots](https://i.imgur.com/UJaMKCT.png)
+
+## Todo
+
+- [x] Implement Routers
+- [ ] Save the input in the url so the calc is shareable
+- [ ] Find how to center the calendar
