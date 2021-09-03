@@ -10,14 +10,12 @@ const App = () => {
 
   return (
     <>
-      <Header>
-        <h1 style={{ textAlign: 'center' }}>Diff Time App</h1>
-      </Header>
+      <Header text="Diff Time" />
 
-      <Text>
-        In the calendar, put a date and I will tell you how many days have
-        passed or are missing for that date to arrive.
-      </Text>
+      <Text
+        text="In the calendar, put a date and I will tell you how many days
+        have passed or are missing for that date to arrive."
+      />
 
       <Calendar onChange={(event) => setDate(new Date(event.target.value))} />
 
@@ -34,9 +32,7 @@ const App = () => {
         )
       ) : null}
 
-      <Footer>
-        <Text>UltiRequiem © 2021</Text>
-      </Footer>
+      <Footer text="UltiRequiem © 2021" />
     </>
   )
 }

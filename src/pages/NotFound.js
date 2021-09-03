@@ -1,12 +1,12 @@
 import React from 'react'
 
-const NotFound = () => (
-    <section>
-        <section>
-            <h2>404</h2>
-            <p>Not Found</p>
-        </section>
-    </section>
-);
+import { Text } from '@components'
 
-export default NotFound;
+const NotFound = () => (
+  <>
+    <h1>404</h1>
+    <Text text="Page not found" />
+  </>
+)
+
+export default NotFound
