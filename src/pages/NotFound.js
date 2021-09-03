@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Text } from '@components'
+import { Text, Title } from '@components'
 
 const NotFound = () => (
   <>
-    <h1>404</h1>
+    <Title text="404"/>
     <Text text="Page not found" />
   </>
 )
