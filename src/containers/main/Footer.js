@@ -1,5 +1,7 @@
 import React from 'react'
 
-const Footer = () => <Footer text="UltiRequiem © 2021" />
+import {Footer as StyledFooter} from '@components'
+
+const Footer = () => <StyledFooter text="UltiRequiem © 2021" />
 
 export default Footer

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 
-import { Calendar as StyledCalendar, Text } from '@components'
+import { Calendar as StyledCalendar } from '@components'
 
 import { dateDiffInDays } from '@utils'
 
@@ -17,14 +17,14 @@ const Calendar = () => {
 
       {date ? (
         dateDiffInDays(date) >= 0 ? (
-          <Text>
+          <p>
             {dateDiffInDays(date)} days left for {date.toUTCString()}.
-          </Text>
+          </p>
         ) : (
-          <Text>
+          <p>
             {dateDiffInDays(date).toString().replace('-', '')} days have passed
             since {date.toUTCString()}.
-          </Text>
+          </p>
         )
       ) : null}
     </>
