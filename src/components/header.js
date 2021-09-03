@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.header`
   background: yellow;
-  display: flex;
-  align-items: center;
+  padding: 5px;
 `
 
 export default StyledHeader

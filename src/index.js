@@ -2,5 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import App from './routes'
+import GlobalStyles from './globalStyles'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const StyledApp = () => (
+  <>
+    <GlobalStyles />
+    <App />
+  </>
+)
+
+ReactDOM.render(<StyledApp />, document.getElementById('root'))

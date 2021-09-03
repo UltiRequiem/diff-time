@@ -7,8 +7,4 @@ const StyledFooter = styled.footer`
   background-color: #45a1ff;
 `
 
-const StyledP = styled.p`
-  color: #fff;
-`
-
-export { StyledFooter, StyledP }
+export default StyledFooter
