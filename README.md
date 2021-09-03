@@ -11,5 +11,5 @@
 ## Todo
 
 - [x] Implement Routers
-- [ ] Save the input in the url so the calc is shareable
+- [x] Save the input in the url so the calc is shareable
 - [ ] Find how to center the calendar
