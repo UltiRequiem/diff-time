@@ -22,3 +22,7 @@ Live demo: https://diff-time.netlify.app
   > Example: https://diff-time.netlify.app/?date=10-13-2006
 
 - [ ] Find how to center the calendar
+
+### License
+
+This project is licensed under the [Mit License](./LICENSE.md).
