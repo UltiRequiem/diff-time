@@ -4,9 +4,11 @@ import PropTypes from 'prop-types'
 import  Text  from '../text'
 import StyledFooter from './styles'
 
-const Footer = ({text}) => (
+const Footer = ({text, url}) => (
   <StyledFooter>
-    <Text text={text} />
+    <a href={url}>
+       <Text text={text} />
+    </a>
   </StyledFooter>
 )
 
