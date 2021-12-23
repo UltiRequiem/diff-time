@@ -1,10 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
   body {
     background: teal;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 `
-
-export default GlobalStyle

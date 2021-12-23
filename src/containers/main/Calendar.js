@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { Calendar as StyledCalendar } from '@components'
-
 import { dateDiffInDays } from '@utils'
 
 const Calendar = ({ dateQuery }) => {
