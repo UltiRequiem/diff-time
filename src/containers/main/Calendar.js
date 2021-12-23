@@ -26,16 +26,20 @@ const Calendar = ({ dateQuery }) => {
       />
 
       {dateQuery ? (
-        dateDiffInDays(dateQuery) >= 0 ? (
-          <p>
-            {dateDiffInDays(dateQuery)} days left for {dateQuery.toUTCString()}.
-          </p>
-        ) : (
-          <p>
-            {dateDiffInDays(dateQuery).toString().replace('-', '')} days have
-            passed since {dateQuery.toUTCString()}.
-          </p>
-        )
+        <p>
+          {dateDiffInDays(
+            dateQuery >= 0
+              ? `${dateDiffInDays(
+                  dateQuery
+                )} days left for ${dateQuery.toUTCString()}.`
+              : `${dateDiffInDays(dateQuery)
+                  .toString()
+                  .replace(
+                    '-',
+                    ''
+                  )} days have  passed since ${dateQuery.toUTCString()}.`
+          )}
+        </p>
       ) : null}
 
       {date ? (

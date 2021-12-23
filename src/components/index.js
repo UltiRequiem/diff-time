@@ -1,7 +1,5 @@
-import Calendar from './calendarInput'
-import Footer from './footer'
-import Header from './header'
-import Text from './text'
-import Title from './title'
-
-export { Calendar, Footer, Header, Text, Title }
+export { default as Calendar } from './calendarInput'
+export { default as Footer } from './footer'
+export { default as Header } from './header'
+export { default as Text } from './text'
+export { default as Title } from './title'

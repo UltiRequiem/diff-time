@@ -1,4 +1,2 @@
-import Main from './Main'
-import NotFound from './NotFound'
-
-export { Main, NotFound }
+export {default as Main} from './Main'
+export {default as NotFound} from './NotFound'
