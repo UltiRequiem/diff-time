@@ -7,7 +7,7 @@ import StyledFooter from './styles'
 const Footer = ({ text, url }) => (
   <StyledFooter>
     <a href={url}>
-      <Text text={text} />
+      <Text>{text}</Text>
     </a>
   </StyledFooter>
 )

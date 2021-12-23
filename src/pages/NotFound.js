@@ -1,11 +1,13 @@
 import React from 'react'
-import { Text, Title } from '@components'
+import { Text, Title, Header } from '@components'
 
 export default function NotFound() {
   return (
     <>
-      <Title text="404"/>
-      <Text text="Page not found" />
+      <Header text="404" />
+      <div style={{ textAlign: 'center' }}>
+        <Text>Page not found</Text>
+      </div>
     </>
   )
-} 
+}

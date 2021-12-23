@@ -6,7 +6,7 @@ import StyledHeader from './styles'
 
 const Header = ({ text }) => (
   <StyledHeader>
-    <Title text={text} />
+    <Title>{text}</Title>
   </StyledHeader>
 )
 
