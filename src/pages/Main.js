@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { Header, Instructions, Calendar, Footer } from '@containers/main'
+import { Calendar } from '@containers/main'
+import { Header, Text, Footer } from '@components'
 
 export default function App() {
   const [params, setParams] = useState(null)
@@ -13,10 +14,14 @@ export default function App() {
 
   return (
     <>
-      <Header />
-      <Instructions />
+      <Header text="Diff Time" />
+      <Text
+        text="In the calendar, put a date and I will tell you how many days
+        have passed or are missing for that date to arrive."
+      />
+
       <Calendar dateQuery={params} />
-      <Footer />
+      <Footer text="UltiRequiem © 2021" url="https://github.com/UltiRequiem" />
     </>
   )
 }
