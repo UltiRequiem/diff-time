@@ -8,8 +8,7 @@ import { dateDiffInDays } from '@utils'
 
 export const DateMessage = ({ date }) => {
   const diff = dateDiffInDays(date)
-  const [dateString, diffString] = [date, diff].map((item) => item.toString())
-
+  const [dateString, diffString] = [date, diff].map(String)
   const formattedDiff = diffString.replace('-', '')
 
   return (
