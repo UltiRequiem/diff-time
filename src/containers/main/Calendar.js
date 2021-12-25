@@ -6,6 +6,19 @@ import PropTypes from 'prop-types'
 import { Calendar as StyledCalendar } from '@components'
 import { dateDiffInDays } from '@utils'
 
+export const DateMessage = ({ date }) => {
+  const diff = dateDiffInDays(date)
+  const [dateString, diffString] = [date, diff].map((item) => item.toString())
+
+  const formattedDiff = diffString.replace('-', '')
+
+  return (
+    <p>{`${formattedDiff} days ${
+      diff >= 0 ? 'left for' : 'passed since'
+    } ${dateString}.`}</p>
+  )
+}
+
 const Calendar = ({ dateQuery }) => {
   const [date, setDate] = useState(null)
 
@@ -23,19 +36,17 @@ const Calendar = ({ dateQuery }) => {
         }
       />
 
-      <p>
-        {date instanceof Date
-          ? dateDiffInDays(date) >= 0
-            ? `${dateDiffInDays(date)} days left for ${date.toString()}.`
-            : `${dateDiffInDays(date)} days passed since ${date.toString()}.`
-          : null}
-      </p>
+      {date instanceof Date ? <DateMessage date={date} /> : null}
     </>
   )
 }
 
 Calendar.propTypes = {
   dateQuery: PropTypes.string
+}
+
+DateMessage.propTypes = {
+  date: PropTypes.instanceOf(Date)
 }
 
 export default Calendar
