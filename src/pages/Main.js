@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
 import { Calendar } from '@containers/main'
 import { Header, Text, Footer } from '@components'
 
 export default function App() {
-  const [params, setParams] = useState(null)
-  const location = useLocation()
-
-  useEffect(() => {
-    setParams(new URLSearchParams(location.search).get('date'))
-  })
+  const { date } = useParams()
 
   return (
     <>
@@ -20,7 +15,7 @@ export default function App() {
         have passed or are missing for that date to arrive."
       />
 
-      <Calendar dateQuery={params} />
+      <Calendar dateQuery={date} />
       <Footer text="UltiRequiem © 2021" url="https://github.com/UltiRequiem" />
     </>
   )

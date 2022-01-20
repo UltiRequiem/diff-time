@@ -19,7 +19,7 @@ Live demo: https://diff-time.netlify.app
 
 - [x] Save the input in the url so the calc is shareable
 
-  > Example: https://diff-time.netlify.app/?date=10-13-2006
+  > Example: https://diff-time.netlify.app/10-13-2006
 
 - [ ] Find how to center the calendar
 
