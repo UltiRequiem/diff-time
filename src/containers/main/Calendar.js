@@ -12,10 +12,10 @@ export const DateMessage = ({ date }) => {
   const formattedDiff = diffString.replace('-', '')
 
   return (
-    <p>
+    <p style={{ fontSize: '1.3em' }}>
       {`${formattedDiff} days ${
         diff >= 0 ? 'left for' : 'passed since'
-      } ${dateString}.`}
+      } ${dateString.split(' ').slice(0,4).join(' ')}.`}
     </p>
   )
 }

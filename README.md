@@ -21,7 +21,9 @@ Live demo: https://diff-time.netlify.app
 
       > Example: https://diff-time.netlify.app/10-13-2006
 
-- [ ] Find how to center the calendar
+- [x] Find how to center the calendar
+
+      > I feel like a better frontend developer now
 
 ### License
 
