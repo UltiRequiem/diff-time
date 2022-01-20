@@ -14,6 +14,8 @@ Live demo: https://diff-time.netlify.app
 
 - [x] Implement Routers
 
+  > Works on local, need to configure netlify
+
 - [x] Save the input in the url so the calc is shareable
 
   > Example: https://diff-time.netlify.app/10-13-2006
