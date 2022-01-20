@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { Calendar as StyledCalendar } from '@components'
@@ -12,9 +12,11 @@ export const DateMessage = ({ date }) => {
   const formattedDiff = diffString.replace('-', '')
 
   return (
-    <p>{`${formattedDiff} days ${
-      diff >= 0 ? 'left for' : 'passed since'
-    } ${dateString}.`}</p>
+    <p>
+      {`${formattedDiff} days ${
+        diff >= 0 ? 'left for' : 'passed since'
+      } ${dateString}.`}
+    </p>
   )
 }
 

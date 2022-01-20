@@ -26,6 +26,6 @@ module.exports = {
   rules: {
     quotes: ['warn', 'single', 'avoid-escape'],
     'no-plusplus': 'off',
-    'max-classes-per-file': 'off',
+    'max-classes-per-file': 'off'
   }
 }

@@ -14,12 +14,12 @@ Live demo: https://diff-time.netlify.app
 
 - [x] Implement Routers
 
-  > Due to Netlify limitations, only the Main path works,
-  > I am trying to find a better place to host the project but can't find any.
+      > Due to Netlify limitations, only the Main path works, I am trying to
+      > find a better place to host the project but can't find any.
 
 - [x] Save the input in the url so the calc is shareable
 
-  > Example: https://diff-time.netlify.app/10-13-2006
+      > Example: https://diff-time.netlify.app/10-13-2006
 
 - [ ] Find how to center the calendar
 

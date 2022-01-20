@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 import { Calendar } from '@containers/main'
-import { Header, Text, Footer } from '@components'
+import { Footer, Header, Text } from '@components'
 
 export default function App() {
   const { date } = useParams()

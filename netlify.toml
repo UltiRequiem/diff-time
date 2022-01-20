@@ -1,8 +1,9 @@
 [build]
-  command = "yarn run build:production"
-  publish = "/dist"
-  base = "/"
+command = "yarn run build:production"
+publish = "/dist"
+base = "/"
 
 [[redirects]]
-  from = "/*"
-  to = "/"
+from = "/"
+to = "/"
+status = 200

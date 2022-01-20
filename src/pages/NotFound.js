@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Title, Header } from '@components'
+import { Header, Text } from '@components'
 
 export default function NotFound() {
   return (
