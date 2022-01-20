@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Title from '../title'
 import StyledHeader from './styles'
 
 const Header = ({ text }) => (
   <StyledHeader>
-    <Title>{text}</Title>
+    <h1>{text}</h1>
   </StyledHeader>
 )
 

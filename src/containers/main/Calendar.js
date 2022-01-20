@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
-import { Calendar as StyledCalendar } from '@components'
 import { dateDiffInDays } from '@utils'
 
 export const DateMessage = ({ date }) => {
@@ -13,9 +12,11 @@ export const DateMessage = ({ date }) => {
 
   return (
     <p style={{ fontSize: '1.3em' }}>
-      {`${formattedDiff} days ${
-        diff >= 0 ? 'left for' : 'passed since'
-      } ${dateString.split(' ').slice(0,4).join(' ')}.`}
+      <em>
+        {`${formattedDiff} days ${
+          diff >= 0 ? 'left for' : 'passed since'
+        } ${dateString.split(' ').slice(0, 4).join(' ')}.`}
+      </em>{' '}
     </p>
   )
 }
@@ -29,7 +30,8 @@ const Calendar = ({ dateQuery }) => {
 
   return (
     <>
-      <StyledCalendar
+      <input
+        type="date"
         onChange={(event) => setDate(new Date(event.target.value))}
         value={
           date instanceof Date ??

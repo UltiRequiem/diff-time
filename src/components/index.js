@@ -1,5 +1,2 @@
-export { default as Calendar } from './calendarInput'
 export { default as Footer } from './footer'
 export { default as Header } from './header'
-export { default as Text } from './text'
-export { default as Title } from './title'

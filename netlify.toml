@@ -1,4 +1,0 @@
-[build]
-command = "yarn run build:production"
-publish = "/dist"
-base = "/"

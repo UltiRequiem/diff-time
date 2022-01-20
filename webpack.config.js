@@ -5,6 +5,7 @@ const HtmlPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 /** @param {string} dir */
 const fm = (dir) => path.join(__dirname, dir)
@@ -13,7 +14,7 @@ module.exports = {
   entry: './src/index.js',
 
   output: {
-    path: fm('dist'),
+    path: fm('build'),
     filename: '[name].[contenthash].js'
   },
 
@@ -58,6 +59,7 @@ module.exports = {
       defaults: false
     }),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({ patterns: [{ from: 'static' }] }),
     new HtmlPlugin({
       template: './public/index.html',
       filename: './index.html'
