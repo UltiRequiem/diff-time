@@ -2,8 +2,3 @@
 command = "yarn run build:production"
 publish = "/dist"
 base = "/"
-
-[[redirects]]
-from = "/"
-to = "/"
-status = 200
