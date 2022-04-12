@@ -5,4 +5,4 @@ if (IS_BROWSER) {
   setup();
 }
 
-export { tw, setup };
+export { setup, tw };

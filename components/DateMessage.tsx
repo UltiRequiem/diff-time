@@ -1,6 +1,6 @@
 /** @jsx h */
 import { h } from "../client_deps.ts";
-import { dateFmt, dateDiffInDays } from "../utils/mod.ts";
+import { dateDiffInDays, dateFmt } from "../utils/mod.ts";
 
 export interface DateMessageProps {
   date: string;
