@@ -53,12 +53,14 @@ function Body({ date }: IndexProps) {
           How much time is gone?
         </h1>
         <form class={tw`flex flex-col gap-5`}>
-          <input
-            class={tw`w-64 h-14 p-3 rounded-md shadow-md`}
-            type="date"
-            name="date"
-            value={date}
-          />
+          <label>
+            <input
+              class={tw`w-64 h-14 p-3 rounded-md shadow-md`}
+              type="date"
+              name="date"
+              value={date}
+            />
+          </label>
           <Button />
         </form>
         {date && (
