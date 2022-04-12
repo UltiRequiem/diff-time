@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer
       class={tw
-        `rounded-t-lg shadow fixed bottom-0  h-28 w-full flex items-center justify-center space-x-12 md:justify-between md:p-6 bg-gray-800 text-gray-400`}
+        `rounded-t-lg shadow fixed bottom-0 h-16 w-full flex items-center justify-center space-x-12 md:justify-between md:p-6 bg-gray-800 text-gray-400`}
     >
       <div>
         <a href="https://ultirequiem.com" class={link}>

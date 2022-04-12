@@ -19,7 +19,12 @@ export function DateMessage({ date }: DateMessageProps) {
 
   return (
     <div>
-      <p class={tw`text-xl md:text-6xl text-gray-200 font-bold`}>{message}</p>
+      <p
+        class={tw
+          `text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-200 to-blue-600 font-bold pb-4`}
+      >
+        {message}
+      </p>
     </div>
   );
 }

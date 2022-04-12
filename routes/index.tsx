@@ -9,6 +9,7 @@ import {
   DiffTimeHead,
   Footer,
 } from "../components/mod.ts";
+import ShareButton from "../islands/ShareButton.tsx";
 
 interface IndexProps {
   date: string;
@@ -41,9 +42,12 @@ function Body({ date }: IndexProps) {
     <>
       <main
         class={tw
-          `flex items-center justify-center flex-col gap-9 text-center pt-36`}
+          `flex items-center justify-center flex-col md:gap-12 gap-24 text-center pt-12 md:pt-30`}
       >
-        <h1 class={tw`font-bold leading-7 text-gray-900 text-2xl md:text-4xl`}>
+        <h1
+          class={tw
+            `font-bold leading-7 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-blue-600 pb-3`}
+        >
           How much time is left?
           <br />
           How much time is gone?
@@ -57,7 +61,12 @@ function Body({ date }: IndexProps) {
           />
           <Button />
         </form>
-        {date && <DateMessage date={date} />}
+        {date && (
+          <>
+            <DateMessage date={date} />
+            <ShareButton />
+          </>
+        )}
       </main>
     </>
   );
