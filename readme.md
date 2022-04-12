@@ -2,9 +2,11 @@
 
 ## Changelog
 
-Previously this was made with plain React and transpiling with Babel and Webpack.
+Previously this was made with plain React and transpiling with Babel and
+Webpack.
 
-> [Check the source code](https://github.com/UltiRequiem/diff-time/releases/tag/v1.0.0) / [See old demo](https://diff-time.netlify.app)
+> [Check the source code](https://github.com/UltiRequiem/diff-time/releases/tag/v1.0.0)
+> / [See old demo](https://diff-time.netlify.app)
 
 ## Support
 
