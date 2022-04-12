@@ -46,16 +46,14 @@ function Body({ date }: IndexProps) {
       >
         <h1
           class={tw
-            `font-bold leading-7 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-blue-600 pb-3`}
+            `font-bold leading-7 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-blue-600 pb-4`}
         >
-          How much time is left?
-          <br />
-          How much time is gone?
+          How much time is left/gone?
         </h1>
         <form class={tw`flex flex-col gap-5`}>
           <label>
             <input
-              class={tw`w-64 h-14 p-3 rounded-md shadow-md`}
+              class={tw`w-96 h-14 p-3 rounded-md shadow-md`}
               type="date"
               name="date"
               value={date}

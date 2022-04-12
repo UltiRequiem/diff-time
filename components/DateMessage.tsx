@@ -21,7 +21,7 @@ export function DateMessage({ date }: DateMessageProps) {
     <div>
       <p
         class={tw
-          `text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-200 to-blue-600 font-bold pb-4`}
+          `text-5xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-200 to-blue-600 font-bold pb-4`}
       >
         {message}
       </p>
