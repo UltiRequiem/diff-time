@@ -1,6 +1,9 @@
 # Diff Time
 
-A real time clock 🕐
+- **How much time is left since X?**
+- **How much time is gone since X?**
+
+This site will help you to discover that!
 
 ### Technologies Used
 
