@@ -1,14 +1,13 @@
 /** @jsx h */
-import { h, PageProps } from "../client_deps.ts";
+import { h, PageProps, tw } from "../client_deps.ts";
 import { Handlers } from "../server_deps.ts";
 import { DateMessage } from "../components/mod.ts";
-import { tw } from "../twind.ts";
 
-interface Data {
+interface IndexProps {
   date: string;
 }
 
-export const handler: Handlers<Data> = {
+export const handler: Handlers<IndexProps> = {
   GET(request, context) {
     const url = new URL(request.url);
 
@@ -18,7 +17,7 @@ export const handler: Handlers<Data> = {
   },
 };
 
-export default function Page(props: PageProps<Data>) {
+export default function Page(props: PageProps<IndexProps>) {
   const { date } = props.data;
 
   return (
