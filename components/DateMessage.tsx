@@ -13,13 +13,13 @@ export function DateMessage({ date }: DateMessageProps) {
 
   const formattedDate = dateFmt.format(dateObj);
 
-  const message = `${diff} days ${
-    diff >= 0 ? "from" : "ago"
+  const message = `${Math.abs(diff)} days ${
+    diff >= 0 ? "left for" : "passed since"
   } ${formattedDate}.`;
 
   return (
     <div>
-      <p class={tw`text-lg font-bold`}>{message}</p>
+      <p class={tw`text-xl md:text-6xl text-gray-200 font-bold`}>{message}</p>
     </div>
   );
 }
