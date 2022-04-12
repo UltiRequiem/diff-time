@@ -5,6 +5,9 @@
 
 This site will help you to discover that!
 
+> You can share your own timers! Example 👉
+> http://localhost:8000/?date=2022-04-22
+
 ### Technologies Used
 
 - 💨[Fresh](https://github.com/lucacasonato/fresh): The next-gen web framework
