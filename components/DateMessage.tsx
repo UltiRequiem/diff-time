@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h } from "../client_deps.ts";
+import { h, tw } from "../client_deps.ts";
 import { dateDiffInDays, dateFmt } from "../utils/mod.ts";
 
 export interface DateMessageProps {
@@ -17,5 +17,9 @@ export function DateMessage({ date }: DateMessageProps) {
     diff >= 0 ? "from" : "ago"
   } ${formattedDate}.`;
 
-  return <p>{message}</p>;
+  return (
+    <div>
+      <p class={tw`text-lg font-bold`}>{message}</p>
+    </div>
+  );
 }
