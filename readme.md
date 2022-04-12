@@ -1,12 +1,36 @@
 # Diff Time
 
+A real time clock 🕐
+
+### Technologies Used
+
+- 💨[Fresh](https://github.com/lucacasonato/fresh): The next-gen web framework
+
+- ⚛️ [Preact](https://preactjs.com): Fast 3kB alternative to React with the same
+  modern API
+
+- ✨ [Twind](https://twind.dev): The smallest, fastest, most feature complete
+  tailwind-in-js solution in existence
+
+- 💪 [TypeScript](https://typescriptlang.org): JavaScript with Types
+
+- 🤖
+  [Continuos Integration and Deployment](https://github.com/UltiRequiem/diff-time/actions):
+  For fast and safe development
+
+## Deploy
+
+### Deno Deploy 🦕
+
+https://diff-time.ultirequiem.com
+
+> You can also use https://diff-time.deno.dev 🍃
+
 ## Changelog
 
-Previously this was made with plain React and transpiling with Babel and
-Webpack.
+Previously, this was made with React, Babel and Webpack.
 
-> [Check the source code](https://github.com/UltiRequiem/diff-time/releases/tag/v1.0.0)
-> / [See old demo](https://diff-time.netlify.app)
+> [Check out the old demo](https://diff-time.netlify.app)
 
 ## Support
 
